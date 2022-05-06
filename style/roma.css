@@ -1,0 +1,827 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+    body{
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        background-color: #12253b;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+        
+    h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    }
+    
+    p {
+    margin: 0;
+    padding: 0;
+    }
+    
+    ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    }
+    
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    figure {
+    margin: 0;
+    }
+    
+/* Scroll */
+::-webkit-scrollbar {
+    background-color: #4d769d;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/* Scroll */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* btn */
+.btn__go__home{
+    background-color: rgba(18, 37, 59, 0.102);
+    border: 1px solid #BD8355;
+    border-radius: 25px;
+    height: 40px;
+    width: 165px;
+    color: #BBA390;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+}
+.btn__go__home:hover{ 
+    background-color: #ce905e;
+    color: #ffffff;
+}
+/* btn */
+/* header */
+.logo__btn{
+    display: flex; 
+    max-width: 480px;
+    justify-content: space-between;
+    align-items: center;
+}
+.button__home{
+    margin-left: 35px;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.left__block__ud h2{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    color: #BBA390;
+}
+.text__austria{
+    margin-top: 25px;
+    margin-bottom: 20px;    
+    line-height: 26px;
+    font-size: 18px;
+}
+.btn__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order__btn{
+    width: 200px;
+    height: 60px;
+    margin-top: 15px;
+    background: #2B8CFC;
+    border: 1px solid #2B8CFC;
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s ease-in; 
+}
+.order__btn:hover{
+    background-color: rgb(0, 0, 0, 0.01);
+    border: 1px solid #385980;
+    color: #BBA390;    
+}
+.order__btn a {
+    padding: 20px 18px 20px 18px;
+}
+.dealer__btn{
+    width: 200px;
+    height: 60px;
+    margin-top: 15px;
+    background: #D3D7DB;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s ease-in; 
+}
+.dealer__btn a {
+    padding: 20px 8px 20px 8px;
+}
+.dealer__btn:hover{
+    background-color: rgb(0, 0, 0, 0.01);
+    border: 1px solid #385980;
+    color: #BBA390;  
+}
+
+.block__icon__ud{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: baseline;
+    text-align: center;
+}
+.block__icon__ud p {
+    margin-top: 10px;
+    color: #43607d;
+}
+.block__under__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* burger menu */
+.burger__menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .32s ease-in;
+}
+.burger__menu:hover{
+    color: #ce905e;
+    
+}
+
+.modal{
+    right: 2.5%;
+    transform: translate(0%, 60%);
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, .15); */
+}
+.modal__close{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #FFF;
+    opacity: 1;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+.modal__close:hover{
+    color: #BD8355;
+}
+.modal__dialog{
+    max-width: 360px;
+}
+.modal__nav{
+    font-size: 22px;
+    margin-top: 50px;
+}
+.modal__nav li{
+    margin-bottom: 10px;
+}
+.modal__content{
+    position: relative;
+    width: 280px;
+    height: 185px;
+    background: #526e89;
+    max-width: 100%;
+    padding-left: 25px;
+    border-radius: 8px;
+    overflow-y: auto;
+
+} 
+
+.show{
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+/* burger menu */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    min-width: 540px;
+    font-size: 20px;
+}
+.img__block img{
+    width: 530px;
+    height: auto;
+}
+
+/* header */
+
+/* main */
+
+.block__curtains__three{
+    max-width: 1100px;
+}
+.block__curtains__three h2{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+.block__curtains__two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+}
+.curtains__third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 810px;
+}
+
+/* УНИВЕРСАЛЬНЫЕ КАРНИЗЫ */
+.block__universal__cornices{
+    margin-top: 150px;
+}
+.universal__text{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #BBA390;
+    text-align: center;
+}
+.universal__text__p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 24px;
+}
+.bloc__img__and__text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.bloc__img__and__text h2{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #BBA390;
+    margin-top: 20px;
+}
+.bloc__img__and__text p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    margin: 20px 0px 20px 0px;
+}
+
+
+/* УНИВЕРСАЛЬНЫЕ КАРНИЗЫ */
+
+/* НА ОКНО СО СКОСОМ */
+.block__bevel__cortains{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 125px;
+}
+.center__block__bevel{
+    width: 377px;
+    height: 500px;
+    background: #203B5A;
+}
+.block__text__bevel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 425px;
+    align-items: center;
+}
+.block__text__bevel h2{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    color: #BBA390;
+    margin-top: 20px;
+}
+.block__text__bevel p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    margin: 35px 0px 0px 0px;
+}
+.right__block img {
+    width: 377px;
+    height: 500px;
+}
+/* НА ОКНО СО СКОСОМ */
+
+/* АВТОМАТИЧКИЕ СИСТЕМЫ */
+.brown__text{
+    color: #BBA390;
+}
+.block__auto__system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 125px;
+    max-width: 750px;    
+}
+.block__text__as h2 {
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    color: #BBA390;
+    margin-bottom: 25px;
+}
+.block__text__as p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+}
+/* АВТОМАТИЧКИЕ СИСТЕМЫ */
+
+
+/* Карниз с тихим электромотором */
+.block__quiet__electric__motor{
+    margin-top: 150px;
+}
+
+.block__color__qem {
+    display: flex;
+    align-items: end;
+    max-width: 670px;
+    justify-content: space-between;
+    margin: auto;
+    background: #DAC3A2;
+    height: 300px;
+    border-radius: 15px;
+}
+.block__qem__img {
+    max-height: 446px;
+    margin-left: 40px;
+}
+.block__text__qem{
+    margin: auto;
+}
+.block__text__qem h2 {
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #142536;
+    margin-bottom: 25px;
+}
+.block__text__qem p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px; 
+    color: #142536;
+}
+/* Карниз с тихим электромотором */
+
+
+/* Form */
+.form__conditions__for__suppliers{
+    max-width: 1070px;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.input__phone{
+    border: 1px solid #385980;
+    background-color: rgb(0, 0, 0, 0.01);
+    width: 290px;
+    height: 60px;
+    outline: none;
+    color: #BBA390;
+    padding-left: 15px;
+    font-size: 24px;
+}
+.btn__supplicers__form{
+    width: 290px;
+    height: 60px;
+    margin-top: 15px;
+    background: #2B8CFC;
+    border: 1px solid #2B8CFC;
+    color: #FFFFFF;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s ease-in;    
+}
+.btn__supplicers__form:hover{
+    background-color: rgb(0, 0, 0, 0.01);
+    border: 1px solid #385980;
+    color: #BBA390;    
+}
+.block__text__and__form{
+    text-align: center;
+    border: 2px dashed #476482;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 8px;
+    height: 300px;
+}
+.form__condit{
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.block__text__and__form h2{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    color: #BBA390;
+    margin-top: 10px;
+}
+.block__text__and__form p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-top: 15px;
+}
+.h2__text__form{
+     text-align: center;
+     font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    color: #BBA390;
+}
+/* Form */
+/* main */
+
+/* footer */
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.left__block__footer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 450px;
+    margin-right: 50px;
+}
+.right__block__on__left__footer{
+    margin-right: 60px;
+    margin-left: 50px;
+}
+.logo__img__footer{
+    text-align: inherit;
+}
+.under__line{
+    width: 120px;
+    height: 1px;
+}
+.under__line__av{
+    width: 152px;
+    height: 1px;
+}
+.under__line__fr{
+    width: 152px;
+    height: 1px;
+}
+.under__line__en{
+    width: 146px;
+    height: 1px;
+}
+
+.center__block__footer{
+    max-width: 285px;
+    display: flex;
+    justify-content: end;
+}
+.under__line__post{
+    width: 110px;
+    height: 1px;
+}
+.under__line__stud{
+    width: 128px;
+    height: 1px;
+}
+.under__line__contact{
+    width: 75px;
+    height: 1px;
+}
+
+.rigth__block__footer{
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.rigth__block__footer a{
+    margin-bottom: 12px;
+}
+.email__footer{
+    margin-top: 12px;
+}
+.web__icon img{
+    margin-right: 15px;
+
+}
+/* footer */
+
+/* Адаптив */
+@media screen and (max-width: 800px) {
+    /* header */
+    .header__nav{
+        max-width: 725px;
+    }
+    .button__home,
+    .nav__link{
+        display: none;
+    }
+    .burger__menu {
+        display: block;
+    }
+    /* header */
+
+    /* main */
+    .left__block__ud{
+        width: 390px;
+    }
+    .left__block__ud h2{
+        font-size: 40px;
+    }
+    .left__block__ud p {
+        font-size: 16px;
+    }
+
+    .block__icon__ud{
+        width: 310px;
+        flex-wrap: wrap;
+        
+    }
+    .right__block__icon{
+        margin-top: 30px;
+    }
+    
+    .btn__block{
+        max-width: 380px;
+    }
+    .order__btn{
+        width: 180px;
+        font-size: 16px;
+    }
+    .dealer__btn{
+        width: 180px;
+        font-size: 16px;
+    }
+
+    .block__curtains__two{
+        margin-top: 50px;
+    }
+    .curtains__in__the__doorway{
+        width: 300px;
+    }
+    .curtains__in__the__doorway h2 {
+        font-size: 22px;
+    }
+    .curtains__on__the__doorway {
+        width: 300px;
+    }
+    .curtains__on__the__doorway h2{
+        font-size: 22px;
+    }
+
+    .rope_cornice ,
+    .chain-rotary__cornice , 
+    .rotary__cornice__mini  {
+        width: 200px;
+    }
+    .rope_cornice img,
+    .chain-rotary__cornice img, 
+    .rotary__cornice__mini img {
+        width: 200px;
+    }
+    .rope_cornice h2,
+    .chain-rotary__cornice h2, 
+    .rotary__cornice__mini h2 {
+        font-size: 16px;
+    }
+
+    .block__auto__system{
+        max-width: 670px;
+    }
+    .block__text__as h2{
+        font-size: 36px
+    }
+    .block__text__as p {
+        font-size: 18px;
+    }
+
+
+    .material__for__curtains{
+        justify-content: space-evenly;
+    }
+    .left__block__mfc{
+        width: 300px;
+    }
+    .left__block__mfc h2{
+        font-size: 24px;
+    }
+    .left__block__mfc p {
+        width: 236px;
+    }
+    /* main */
+
+    /* footer */
+    
+    .rigth__block__footer{
+        margin: 15px 0px 0px 0px;
+    }
+    /* footer */
+}
+
+
+@media screen and (max-width: 450px) {
+    .right__block__ud{
+        display: none;
+    }
+    .block__curtains__two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .curtains__third{
+        display: none;
+    }
+    .curtains__in__the__doorway h2,
+    .curtains__on__the__doorway h2{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .curtains__on__the__doorway{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .block__text__uc h2,
+    .block__text__uc p{
+        text-align: start;
+    }
+
+    .bloc__img__and__text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .rope_cornice h2, 
+    .chain-rotary__cornice h2, 
+    .rotary__cornice__mini h2 {
+        font-size: 18px;
+    }
+    .rope_cornice p, 
+    .chain-rotary__cornice p, 
+    .rotary__cornice__mini p{
+        font-size: 16px;
+    }
+    .rope_cornice,
+    .rotary__cornice__mini{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rope_cornice,
+    .rope_cornice img,
+    .chain-rotary__cornice,
+    .chain-rotary__cornice img,
+    .rotary__cornice__mini,
+    .rotary__cornice__mini img {
+        width: 300px;
+    }
+    
+    
+    .chain-rotary__cornice{
+        margin: 35px 0px 35px 0px;
+    }
+    .block__auto__system {
+        justify-content: center;
+    }
+    .block__text__as{
+        margin-bottom: 15px;
+    }
+
+    .block__quiet__electric__motor,
+    .material__for__curtains{
+        display: none;
+    }
+    .h2__text__form,
+    .block__text__and__form h2{
+        font-size: 26px;
+    }
+    .block__text__and__form p{
+         font-size: 14px;
+    }
+
+    .logo__img__footer img {
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .left__block__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }   
+    .center__block__footer{
+        width: 155px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 25px 0px 25px 0px;
+        margin: auto;
+    }
+    .right__block__on__left__footer {
+        margin: 30px 3px 0px 0px;
+    }
+    .rigth__block__footer{
+        align-items: center;
+    }    
+}
+/* Адаптив */
+
+/* Anim */
+._noactive._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.6s ease-in;
+}
+._noactive{
+    opacity: 0;
+    transform: translateY(10%);
+}
+/* Anim */
+
+/* Validator */
+.form__valid{
+    font-size: 18px;
+    color: #BBA390;
+    margin-top: 15px;
+}
+._valid{
+    border: 2px solid #27d132;
+}
+._novalid{
+    border: 2px solid #d12727;
+}
+
+/* Validator */
