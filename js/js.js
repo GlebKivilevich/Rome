@@ -136,3 +136,29 @@ let inputEmail = document.querySelector(".input__phone"),
         el.innerHTML = "";
     }
 // Валидатор email
+
+// Go to home
+const btnGoHome = document.querySelector(".btn__go__home");
+let windowObjectReference;
+
+let FuncGoHome = function (btn) {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    windowObjectReference = window.open("https://glebkivilevich.github.io/Home/", "_blank"); 
+  });
+};
+
+FuncGoHome(btnGoHome);
+// Go to home
+
+// Go Supp
+const btnGoSupp = document.querySelector(".goSupp");
+
+let FuncGoSupp = function (btn) {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    windowObjectReference = window.open("https://glebkivilevich.github.io/Supliers/", "_blank"); 
+  });
+};
+FuncGoSupp(btnGoSupp);
+// Go Supp
